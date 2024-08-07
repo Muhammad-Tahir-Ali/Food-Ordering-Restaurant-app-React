@@ -1,0 +1,27 @@
+.AppDownload {
+    margin: auto;
+    margin-top: 100px;
+    font-size: max(3vw, 20px);
+    font-weight: 500;
+    text-align: center;
+  }
+  
+  .app-downloads-platforms {
+    display: flex;
+    justify-content: center;
+    gap: max(2vw, 20px);
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  
+  .app-downloads-platforms img {
+    width: max(30vw, 120px);
+    max-width: 200px;
+    transition: transform 0.5s;
+    cursor: pointer;
+  }
+  
+  .app-downloads-platforms img:hover {
+    transform: scale(1.1);
+  }
+  

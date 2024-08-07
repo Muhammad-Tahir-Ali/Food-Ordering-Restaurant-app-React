@@ -1,0 +1,156 @@
+/* Footer.css */
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2.5rem; /* 10 in p-10 stands for 2.5rem */
+  background-color: rgb(0, 0, 0);
+  color: red;
+  border-radius: 10px;
+}
+
+.footer nav,
+.footer form {
+  flex: 1 1 20%;
+  margin: 0 1rem;
+}
+
+.footer-title {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.link {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: white;
+  text-decoration: none;
+}
+
+.link-hover:hover {
+  text-decoration: underline;
+  color: red;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.label {
+  margin-bottom: 0.5rem;
+  width: 100%;
+}
+.label-text{
+  width: 100%;
+  right: 0%;
+}
+
+.input {
+  flex: 1;
+  padding: 5px;
+  border-radius: 10px;
+  margin-top: 0.1rem;
+}
+#sub-btn {
+  width: 40%;
+  margin-top: 0.5rem;
+  padding-right: 0.5rem;
+  background-color: red;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  text-align: center;
+}
+
+/* Hover and active states for better user feedback */
+#sub-btn:hover {
+  background-color: darkred;
+  color: black;
+}
+
+#email{
+  width: 100%;
+}
+
+/* Small screens */
+@media (max-width: 576px) {
+  .footer {
+    flex-direction: column;
+    padding: 1.5rem; /* Adjust padding for small screens */
+  }
+
+  .footer nav,
+  .footer form {
+    flex: 1 1 100%;
+    margin: 0.5rem 0; /* Reduce margin for small screens */
+  }
+
+  .join {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .join-item {
+    margin-top: 0.5rem;
+  }
+}
+
+/* Medium screens */
+@media (min-width: 577px) and (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .footer nav,
+  .footer form {
+    flex: 1 1 100%;
+    margin: 1rem 0;
+  }
+
+  .join {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .join-item {
+    margin-top: 0.5rem;
+  }
+}
+
+/* Large screens */
+@media (min-width: 769px) and (max-width: 992px) {
+  .footer {
+    flex-wrap: wrap;
+    padding: 2rem;
+  }
+
+  .footer nav,
+  .footer form {
+    flex: 1 1 45%;
+    margin: 0.5rem;
+  }
+}
+
+/* Extra large screens */
+@media (min-width: 993px) {
+  .footer nav,
+  .footer form {
+    flex: 1 1 100%;
+    margin: 0.5rem 0;
+  }
+
+  .footer nav,
+  .footer form {
+    flex: 1 1 20%;
+    margin: 1rem;
+  }
+}
