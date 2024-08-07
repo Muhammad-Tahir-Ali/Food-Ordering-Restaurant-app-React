@@ -47,7 +47,7 @@ const Cart = () => {
       </div>
       <div className="btn">
         <button className="confirm-btn" id="confirm-btn">
-          Conferm Your Order
+          Confirm Your Order
         </button>
       </div>
       <br />
